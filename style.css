@@ -1,4 +1,4 @@
-/* --------------- reset.css --------------- */
+ /* --------------- reset.css --------------- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -65,22 +65,21 @@ body {
 	min-height:100%;
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: #f45a40;
+	/*color: #f45a40;*/
 	text-decoration: underline;
 }
 a:hover {
-	color: #f45a40;
+	/*color: #f45a40;*/
 	text-decoration:none;
 }
 a:focus, a:active {
-	color: #f45a40;
+	/*color: #f45a40;*/
 	text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6{
 	font-weight:normal;
 }
 img{
-
 	max-width:100%;
 }
 .clr{
@@ -105,15 +104,19 @@ header{
     max-width:1170px;
   }
   .header-top {
-	display: flex;
-	justify-content: space-between;
+	/*display: flex;
+	justify-content: space-between;*/
   	padding: 15px 0 25px;
   }
-    
-
+		.logo{
+			float: left;
+		}
+		nav{
+			float: right;
+		}
     .menu {
 		display: flex;
-			
+
 	}
 	  .menu li {
 		padding:25px 0 20px 35px;
@@ -169,22 +172,22 @@ header{
 		text-decoration: underline;
 		border-color: #4bcaff;
 	}
-	.unslider-nav{/* кнопки навигации при дефолте видны только в панели разработчика - проявим их явно*/
-		margin: -20px auto 0 auto; /*чтобы не было белого отступа после слайдера*/
-		position: relative;
+	/*.unslider-nav{/* кнопки навигации при дефолте видны только в панели разработчика - проявим их явно*/
+		/*margin: -20px auto 0 auto; /*чтобы не было белого отступа после слайдера*/
+		/*position: relative;
 		top: -18px; /*чтобы поднять повыше*/
-		left: -47%;
-	}
-	/*.unslider-nav{
+		/*left: -47%;
+	}*/
+	.unslider-nav{
 		max-width:1170px;
 		/*margin:0 auto;*/
-		/*position:relative;
-		top:-40px;
+		position:relative;
+		top:-25px;
 		left: -47%;
-	}*/
+	}
 .block3-section{
 	background: #f9f9f9;
-	padding: 40px 80px 50px;
+	padding: 40px 0 50px;
 	border-bottom: #e7e7e7;
 	margin-top: -20px;
 }
@@ -258,10 +261,10 @@ header{
 	  margin-bottom:55px;
 	  text-transform: lowercase;
 	}
-      .block4-main {
-      display:flex;
-	    justify-content:space-between;
-    }
+.block4-main {
+  display:flex;
+	  justify-content:space-between;
+}
 	.block4-main article{
 		width:23.1%;
 	}
@@ -337,7 +340,7 @@ header{
 	.subscribe a:hover{
 		color: #fff;
 	}
-
+/*Контакты*/
 	.contakt-main{
 		position: relative;
 		height: 680px;
@@ -353,6 +356,7 @@ header{
 			left:50%; margin-left: -160px; /*т.о. отцентрировали форму*/
 			box-sizing: border-box;
 			text-align: center;
+			color: #414042;
 		}
 			.contakt-block h2{
 				font-size: 36px;
@@ -361,45 +365,42 @@ header{
 			}
 				.contakt-mail{
 					width: 100%;
-		      box-sizing: border-box;
-					font-size: 0.75em;
-					color: #d3d3d3;
+		      font-size: 14px;
+					font-family: Arial,sans-serif;
+					text-align: center;
 					padding: 9px 20px;
-					margin-bottom: 10px;
-					margin-top: 10px;
+					margin: 10px 0;
 					border: none;
 					border-radius: 5px;
-					text-align: center;
-					font-size: 14px;
-					font-family: Arial,sans-serif;
+					box-sizing: border-box;
 				}
 				.contakt-text{
 					width: 100%;
 					height: 140px;
-					box-sizing: border-box;
-					font-size: 0.75em;
-					font-family: 'Roboto', sans-serif;
-		      color: #d3d3d3;
-					padding: 8px 20px;
-					margin-bottom: 15px;
-					margin-top: 10px;
-					border: none;
-					border-radius: 5px;
-					text-align: center;
 					font-size: 14px;
 					font-family: Arial,sans-serif;
+					text-align: center;
+					padding: 8px 20px;
+					margin: 10px 0 15px;
+					border: none;
+					border-radius: 5px;
+					box-sizing: border-box;
 				}
 				.contakt-submit{
 					font-size:15px;
 					border:none;
-					background:#414042;
 				  padding:15px 80px;
 					color:#6eacc4;
 				  cursor:pointer;
 					border-radius:5px;
 					display:block;
+					background: #525153;
 					margin:0 auto;
 					box-shadow: 0 4px 0 #313032;
+				}
+				.contakt-submit:hover{
+					background: #414042;
+					color:#4bcaff;
 				}
 
 footer{
@@ -407,93 +408,28 @@ footer{
 	padding: 40px 0;
 }
 	.ftr h2{
-		font-size:1.325em;
-		font-family: 'Roboto Condensed', sans-serif;
-		text-transform: uppercase;
-		color: #fff;
+		font-size:12px;
+		color: #808080;
 		margin-bottom:15px;
 	}
-	.ftr p{
-		font-size:0.875em;
-		line-height: 1.5em;
-		margin-bottom:20px;
+	.ftr  span{
+		color: #c0c0c2;
 	}
-	.ftr h3{
-		font-weight: medium;
-		font-size:0.875em;
-		padding-top: 5px;
-	}
-	.ftr a{
-		text-decoration: none;
-		color:#fff;
-	}
-	.ftr a:hover{
-		text-decoration: underline;
-	}
-	.support1{
-		float:left;
-		width:53%;
-		margin-right:12%;
-	}
-	.support2{
-		float:left;
-		width: 35%;
-		margin-right: 0;
-	}
-		.support a{
-			display: block;
-			text-decoration: none;
-			color:#7e7f84;
-		}
-	.ftr-mail{
-		width: 100%;
-		box-sizing: border-box;
-		font-size: 0.75em;
-		text-transform: uppercase;
-		padding: 9px 20px;
-		margin-bottom: 20px;
-		margin-top: 5px;
-		border: none;
-	}
-	input::-webkit-input-placeholder{
-			color:#7e7f84;
-	}
-	input::-moz-placeholder{
-			color:#7e7f84;
-	}
-	input::-ms-input-placeholder{
-			color:#7e7f84;
-	}
-	.ftr-text{
-		width: 100%;
-		height: 80px;
-		box-sizing: border-box;
-		font-size: 0.75em;
-		font-family: 'Roboto', sans-serif;
-		text-transform: uppercase;
-		padding: 8px 20px;
-		margin-bottom: 15px;
-		margin-top: 5px;
-		border: none;
-	}
-	.ftr-submit{
-		box-sizing: border-box;
-		font-size: 0.75em;
-		text-transform: uppercase;
-		padding: 8px 20px;
-		border: none;
-		color: #fff;
-		background: #f45a40;
-		cursor:pointer;
-	}
+
 	/*Адаптируем содержимое страницы под разную ширину экрана*/
+	@media screen and (max-width:1050px){
+		.my-slider .wrapper h2{
+			 font-size:36px;
+		}
+		.my-slider .wrapper p{
+			font-size:14px;
+		}
+		.my-slider .wrapper a{
+	 		 font-size: 13px;
+			 border-radius: 7px;
+		   padding: 14px 40px;
+		}
 	@media screen and (max-width:900px){
-		.my-slider ul li h2{
-			top:150px; font-size:3em;
-		}
-		.my-slider ul li p{
-			top:270px;
-		}
 		.block4-main{
 			flex-wrap:wrap;
 		}
@@ -524,6 +460,12 @@ footer{
 		.my-slider ul li p{
 			top:180px;
 		}
+		.block3-section{
+			padding: 20px 0;
+		}
+		.block4-section{
+			margin-bottom:20px;
+		}
 		.search-block{
 			border-top:1px solid #eee;
 			border-bottom:1px solid #eee;
@@ -539,20 +481,16 @@ footer{
 		}
 		.block3-main article{
 			width:95%;
-			margin:0 2.5% 30px;
+			margin:0 2.5% 10px;
+		}
+		.block3-main article p{
+			margin-bottom: 20px;
 		}
 		.block4-section{
 			margin-bottom:10px;
 		}
-		.about{
-	    flex-wrap:wrap;
-			margin-bottom:20px;
-		}
-		.about article{
-			width:95%; margin:0 2.5% 30px;
-		}
-		.about .map{
-			width:95%; margin:0 2.5% 30px;
+		.video-section iframe{
+			width:98%; margin:0 1%;
 		}
 	}
 	@media screen and (max-width:480px){
@@ -562,9 +500,7 @@ footer{
 		.logo{
 			float:none; text-align:center; margin-bottom:10px;
 		}
-		.contakt-basket{
-			float:none; display:table; margin:0 auto;
-		}
+
 		.my-slider ul li h2{
 			top:50px; font-size:1.275em;
 		}
@@ -580,22 +516,11 @@ footer{
 				width:95%; margin:0 2.5% 30px;
 			}
 	@media screen and (max-width:370px){
-		.contakt-basket p{
-			float: none;
-			margin:5px auto;
-		}
 		.my-slider ul li h2{
 			top:30px; font-size:1em;
 		}
 		.my-slider ul li p{
 			top:80px;
 		}
-		.subscribe-form .email-sbs{
-			width:95%;
-			margin:0 2.5% 30px;
-			box-sizing: border-box;
-		}
-		.subscribe-form .submit-sbs{
-			margin-left:2.5%;
-		}
+
 	}
